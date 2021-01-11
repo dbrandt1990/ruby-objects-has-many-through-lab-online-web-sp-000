@@ -21,7 +21,11 @@ class Doctor
   end 
   
   def patients 
-    Appointment.all.select {|app| app.doctor.name == @name}
+    Appointment.all.map do |app|
+      if app.doctor.name == @name
+        app.patient
+      end
+    end
   end
 
 end
