@@ -9,7 +9,7 @@ class Patient
   end
   
   def self.all
-    @@validates_inclusion_of
+    @@all 
   end
   
 end
