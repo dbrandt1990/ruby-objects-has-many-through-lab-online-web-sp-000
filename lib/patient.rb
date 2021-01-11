@@ -8,4 +8,8 @@ class Patient
     @@all << self
   end
   
+  def self.all
+    @@validates_inclusion_of
+  end
+  
 end
