@@ -20,6 +20,7 @@ class Patient
     Appointment.all.map do |app|
       if app.patient.name == @name 
         app.doctor 
+       end
       end
   end
   
