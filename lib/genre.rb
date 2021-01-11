@@ -17,7 +17,11 @@ class Genre
   end
   
   def artists
-    Song.all.select {|song| song.artist.name == }
+    Song.all.select do |song|
+      if song.genre.name == @name
+        song.artist
+      end
+    end
   end 
 
 end
