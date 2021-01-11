@@ -5,13 +5,7 @@ class Song
   
   def initialize(name, artist, genre)
     @name = name
-    save.self
-  end
-  
-   def save
-    if !@@all.include?(self)
-      @@all << self
-    end
+    @@all << self
   end
   
 end
