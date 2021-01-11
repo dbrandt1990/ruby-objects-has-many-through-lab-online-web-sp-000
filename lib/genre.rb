@@ -17,7 +17,7 @@ class Genre
   end
   
   def artists
-    Song.all.map {|song| song.genre.name == @name song.artist}
+    Song.all.map {|song| song.genre.name == @name return song.artist}
   end 
 
 end
