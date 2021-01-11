@@ -24,6 +24,7 @@ class Artist
     Song.all.map do |song|
       if song.artist.name == @name
         song.genre
+       end
       end
   end 
   
