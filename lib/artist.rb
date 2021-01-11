@@ -5,13 +5,7 @@ class Artist
   
   def initialize(name)
     @name = name 
-    self.save
-  end
-  
-  def save
-    if !@@all.include?(self)
-      @@all << self
-    end
+    @@all << save
   end
   
   def self.all 
