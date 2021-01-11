@@ -14,10 +14,6 @@ class Appointment
     @@all
   end
   
-  def new_appointment(date, doctor)
-    Appointment.new(date, doctor)
-  end
-  
   def patient
     @patient
   end
